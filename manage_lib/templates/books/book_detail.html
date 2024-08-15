@@ -1,0 +1,11 @@
+<h1>{{ book.title }}</h1>
+<p>Author: {{ book.author }}</p>
+<p>Published Date: {{ book.published_date }}</p>
+<p>ISBN: {{ book.isbn }}</p>
+
+<a href="{% url 'book_update' book.pk %}">
+    <button type="button">Edit Book</button>
+</a>
+<br>
+<br>
+<a href="{% url 'book_list' %}">Back to list</a>
